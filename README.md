@@ -3,9 +3,8 @@
   - 项目基于Flask框架
   - 项目基于subconverter：https://github.com/tindy2013/subconverter
   - 配置文件版示例： https://github.com/lzdnico/subconverteriniexample
-  - 项目示例站点： https://subweb.niconewbeee.tk
   - 托管地址生成页面示意图
-  ![image](https://github.com/lzdnico/subweb/blob/test/images/index.png) 
+  ![image](https://github.com/paradiseduo/subweb/blob/master/images/index.png) 
 # 环境搭建及运行
   - 1.安装python3 依赖： 
   ```bash
