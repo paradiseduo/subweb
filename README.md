@@ -133,9 +133,6 @@ docker rm -f subweb
 docker exec subweb tail /var/log/core.log -f
 docker exec subweb tail /var/log/web.log -f
 ```
-# 联系我
-  - 更新频道：https://t.me/niconewbeeeapi
-  - 打赏地址:https://t.me/niconewbeeeapi/134
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
