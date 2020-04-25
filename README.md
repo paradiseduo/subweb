@@ -26,7 +26,7 @@
   cd /root/subweb 
   ./subweb.sh 
   ```
-  - 5.登陆管理页面：登陆地址：http://ip:10086/admin             
+  - 5.登录管理页面：登录地址：http://ip:10086/admin             
 
     首先修改前后端地址以及管理员密码，在内容框复制：
 
@@ -78,7 +78,7 @@ proxygroup= '@🔰 节点选择`select{groupname}[]DIRECT'\
   ```bash 
   docker run  -d --name=subweb  --privileged=true --restart=always -v /root/subweb:/subweb -p 10086:10086 -p 10010:10010  niconewbeee/subweb:basic
   ```
-  - 6.登陆管理页面
+  - 6.登录管理页面
 
     用法看 环境搭建及运行 第5步
 
