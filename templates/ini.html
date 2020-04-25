@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>❤️ STC Rule Generator ️️❤️</title>
+    <link href="/static/css/style.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>  
+    <div class="container">
+            <header>
+                <h1>🚀 STC Api Rule Generator 🚁</h1>
+            </header>
+
+            <!-- Proxy tools -->
+        <form method="POST" name = "form1">
+
+            <div class="card" >
+                        <h2>🤡 1.配置文件【远程地址】 或者 直接填写【配置文件】 </h2> 
+                        <label>请在</label>
+                        <a href="https://raw.githubusercontent.com/lzdnico/SSRClash/master/config/default.ini">示例</a>
+                        <label>基础上修改。关键字（;设置分组标志位，;设置规则标志位）不可删除</label>
+                        <h4>配置文件</h4>
+                        <textarea  name = "ini" cols="70" rows="5" placeholder="https://github.com/lzdnico/subconverteriniexample/blob/master/customcountry.ini" >{{ custom  }}</textarea> 
+                        <h4>需要包含的节点</h4>
+                        <textarea  name = "custom1" cols="70" rows="5" id="custom" placeholder="节点名称关键字，支持正则" >{{ custom1  }}</textarea>  
+                        <h4>需要去掉的节点</h4>   
+                        <textarea  name = "custom2" cols="70" rows="5" id="custom" placeholder="节点名称关键字，支持正则" >{{ custom2 }}</textarea>                                                                                 
+            </div>
+
+            <div class="card" >
+                <h2>🤡 2.填入订阅地址，多个换行输入</h2>
+                <textarea  name = "left" cols="70" rows="5" id="custom" placeholder="填写订阅地址,或者SS/SSR/VMESS单链接" >{{ sub  }}</textarea>       
+                <p>
+                    <input type="checkbox" id="cbox1" value="true" name= 'emoji'checked="checked">
+                    <label for="cbox1">国旗emoji</label>
+                    <input type="checkbox" id="cbox2" value="true" name= 'fdn'checked="checked">
+                    <label for="cbox2">忽略不支持节点</label>
+                </p>                 
+            </div>
+
+            <div class="card" >
+                <h2> 🔢 3.选择代理软件</h2>
+                <div id="proxy_tool" onchange="selChange()">
+                    <div class="autobar">
+
+
+                        <div class="pretty p-icon p-round p-plain p-smooth">
+                                <input type="radio" name="tool" value="clashr"checked>
+                                <div class="state p-success-o">
+                                        <i class="icon mdi mdi-transition-masked"></i>
+                                    <label>Clash(R)</label>
+                                </div>
+                        </div>
+                        <div class="pretty p-icon p-round p-plain p-smooth">
+                            <input type="radio" name="tool" value="loon">
+                            <div class="state p-success-o">
+                                    <i class="icon mdi mdi-transition-masked"></i>
+                                <label>Loon</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-icon p-round p-plain p-smooth">
+                            <input type="radio" name="tool" value="surge">
+                            <div class="state p-success-o">
+                                    <i class="icon mdi mdi-transition-masked"></i>
+                                <label>Surge</label>
+                            </div>
+                        </div>
+
+                        <div class="pretty p-icon p-round p-plain p-smooth">
+                            <input type="radio" name="tool" value="quanx">
+                            <div class="state p-success-o">
+                                    <i class="icon mdi mdi-transition-masked"></i>
+                                <label>QuanX</label>
+                            </div>
+                        </div>
+
+                        <div class="pretty p-icon p-round p-plain p-smooth">
+                            <input type="radio" name="tool" value="mellow" >
+                            <div class="state p-success-o">
+                                    <i class="icon mdi mdi-transition-masked"></i>
+                                <label>Mellow</label>
+                            </div>
+                        </div>
+
+                        <div class="pretty p-icon p-round p-plain p-smooth">
+                            <input type="radio" name="tool" value="surfboard">
+                            <div class="state p-success-o">
+                                    <i class="icon mdi mdi-transition-masked"></i>
+                                <label>SurfBoard</label>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+            </div> 
+
+            <div class="card" >
+                <h2> 👌 4.一切准备就绪了</h2>
+            <div style="text-align:center; vertical-align:middel;">
+                <input  type="submit" class="card" name= 'submit' value = "🔥 点击生成托管地址吧 🍩""/>
+            </div>
+            </div>
+                           
+        </form>          
+        <footer>        
+        <p> &copy;<a href="https://weibo.com/hackl0us">@Hackl0us</a>.<a href="https://weibo.com/haxck"> 美工</a>.<a href="https://github.com/tindy2013/subconverter"> API源码</a>.<a>@NicoNewBeee</a></p>
+        </footer>
+    </div>
+</body>
+</html>

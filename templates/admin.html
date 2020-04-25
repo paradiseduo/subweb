@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>❤️ STC Rule Generator ️️❤️</title>
+    <link href="/static/css/style.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>  
+    <div class="container">
+            <header>
+                <h1>🚀 STC Api Rule Generator 🚁</h1>
+            </header>
+
+            <!-- Proxy tools -->
+        <form method="POST" name = "form1">
+
+
+            <div class="card" >
+                <h2>🤡 后台管理系统</h2>
+                <h4>内容</h4>
+                <textarea  name = "content" cols="70" rows="5" id="custom" placeholder="配置文件内容"" >{{ content  }}</textarea>  
+                <h4>地址</h4>   
+                <textarea  name = "file" cols="70" rows="5" id="custom" placeholder="配置文件地址   ../api/aff.py    or   ../config/pref.ini   or  ../templates/login.html" >{{ file }}</textarea>                      
+                <h4>密码</h4>
+                <textarea  name = "passwd" cols="70" rows="5" id="custom" placeholder="/api/aff.py  中的passwd参数" >{{ passwd }}</textarea>
+                <div style="text-align:center; vertical-align:middel;">
+                    <input  type="submit" class="card" name= 'submit' value = "上传配置""/>
+                    <input  type="submit" class="card" name= 'submit' value = "查看配置""/>
+                    <input  type="submit" class="card" name= 'submit' value = "重启后端""/>
+                    <input  type="submit" class="card" name= 'submit' value = "重启前端""/>
+                </div>
+            </div>
+                           
+        </form>          
+        <footer>        
+        <p> &copy;<a href="https://weibo.com/hackl0us">@Hackl0us</a>.<a href="https://weibo.com/haxck"> 美工</a>.<a href="https://github.com/tindy2013/subconverter"> API源码</a>.<a>@NicoNewBeee</a></p>
+        </footer>
+    </div>
+</body>
+</html>

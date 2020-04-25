@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>❤️ Rule Generator ️️❤️</title>
+    <link href="/static/css/style.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container">
+            <header>
+                <h1>🚀 STC Api Rule Generator 🚁</h1>
+            </header>
+
+                 
+            <div class="card" align="center">
+                <h2>🤡 你的订阅地址为</h2>
+                <textarea name = "left" cols="70" rows="5" id="custom" placeholder="填写订阅地址" >{{ sub  }}</textarea>
+            </div>
+
+            <div class="card" align="center">
+                <h2>🤡 你的客制化需求为</h2>
+                <textarea name = "custom" cols="70" rows="5" id="custom" placeholder="QuanX Node List 不支持客制化 " >{{ custom  }}</textarea>
+            </div>
+
+            <div class="card" align="center">
+                <h2>🤖  Node List 为</h2>
+                <h3>STC 提供的托管地址为</h3>
+                <textarea name = "clash" cols="70" rows="5" id="end"  placeholder="这是生成的托管地址"   >{{ api }}</textarea>
+                <button  id="btnCopy">点击复制吧</button>
+                <br/><br/>
+                <h3>TindyX 提供的托管地址为</h3>
+                <textarea name = "clash" cols="70" rows="5" id="end2"  placeholder="这是生成的托管地址"   >{{ api2 }}</textarea>                
+                <button  id="btnCopy2">点击复制吧</button>       
+            </div> 
+    <footer>
+        <p> &copy;<a href="https://weibo.com/hackl0us">@Hackl0us</a>.<a href="https://weibo.com/haxck"> 美工</a>.<a href="https://github.com/tindy2013/subconverter"> API源码</a>.<a>@NicoNewBeee</a></p>
+    </footer>
+    </div>
+<script type="text/javascript">
+    const myInp = document.getElementById("end");
+    const btnCopy = document.getElementById("btnCopy");
+    const myInp2 = document.getElementById("end2");
+    const btnCopy2 = document.getElementById("btnCopy2");
+    btnCopy.onclick = function(){
+        myInp.select();
+        document.execCommand("Copy");
+  };
+    btnCopy2.onclick = function(){
+        myInp2.select();
+        document.execCommand("Copy");
+  }; 
+</script>
+</body>
+
+</html>

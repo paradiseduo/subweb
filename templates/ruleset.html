@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>❤️ STC Rule Generator ️️❤️</title>
+    <link href="/static/css/style.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>  
+    <div class="container">
+            <header>
+                <h1>🚀 STC Api Rule Generator 🚁</h1>
+            </header>
+
+            <!-- Proxy tools -->
+        <form method="POST" name = "form1">
+
+                <div class="card" >
+                        <h2>🤡 Subconverter RuleSet 生成</h2> 
+                        <h3>便捷设置：</h3>
+                        <div class="card" align="center">
+                            设置分流名称:                                                 
+                            <input type="text" name="rulename" size =50>   
+                            <br/>
+                            <br/>
+                            设置分流地址:
+                            <input type="text" name="rulelist" size = 50>                
+                            <div style="text-align:center; vertical-align:middel;">
+                                <input  type="submit" class="card" name= 'submit' value = "点击添加分流""/>
+                            </div>
+                        </div>    
+                        <h3>客制化结果为：</h3>
+                        <div class="card">
+                        <textarea  name = "rulecustom" cols="70" rows="10" id="custom" placeholder="" >{{ rulecustom  }}</textarea>
+                      </div>                                                                                
+                </div>
+
+                <div class="card" >
+                    <h2>🤡 Subconverter Groups 生成</h2> 
+                    <h3>便捷设置：</h3>
+                    <div class="card" align="center">
+                        设置名称（就是个名字）:                                                 
+                        <input type="text" name="firstname" size =30>   
+                        <br/>
+                        <br/>
+                        设置过滤（正则表达式）:
+                        <input type="text" name="lastname" size = 30>                
+                        <br/> 
+                        <br/>                                                               
+                                    <input type="radio" name="method" value="select" checked>
+                                    <label>手动选择</label>                            
+                                    <input type="radio" name="method" value="fallback" >
+                                    <label>故障切换</label>
+                                    <input type="radio" name="method" value="url-test" >
+                                    <label>延迟最低</label>                            
+                                    <input type="radio" name="method" value="load-balance" >
+                                    <label>负载均衡</label>   
+                        <br/>   
+                        <br/> 
+                        <div style="text-align:center; vertical-align:middel;">
+                            <input  type="submit" class="card" name= 'submit' value = "点击添加分组""/>
+                        </div>
+                    </div>    
+                    <h3>客制化结果为：</h3>
+                    <div class="card">
+                    <textarea  name = "custom1" cols="70" rows="10" id="custom" placeholder="" >{{ custom1  }}</textarea>
+                    </div>                                                                                
+            </div>
+                           
+        </form>          
+        <footer>        
+        <p> &copy;<a href="https://weibo.com/hackl0us">@Hackl0us</a>.<a href="https://weibo.com/haxck"> 美工</a>.<a href="https://github.com/tindy2013/subconverter"> API源码</a>.<a>@NicoNewBeee</a></p>
+        </footer>
+    </div>
+</body>
+</html>
