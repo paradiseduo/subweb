@@ -22,7 +22,7 @@
   ```
   - 4.开始运行：
   ```bash
-  chmod 777 /root//subweb/subweb.sh
+  chmod 777 /root/subweb/subweb.sh
   cd /root/subweb 
   ./subweb.sh 
   ```
