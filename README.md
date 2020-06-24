@@ -13,7 +13,7 @@
   - 2.下载源码：
   ```bash
   cd ~
-  git clone -b admin https://github.com/paradiseduo/subweb.git
+  git clone https://github.com/paradiseduo/subweb.git
   ```
   - 3.安装库： 
   ```bash
