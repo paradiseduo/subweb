@@ -2,6 +2,8 @@
 DOMAIN-KEYWORD,beplay
 
 # > Blizzard
+USER-AGENT,hearthstone*
+DOMAIN,cdp.cloud.unity3d.com
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,battlenet.com
 DOMAIN-SUFFIX,blizzard.com
@@ -14,11 +16,6 @@ DOMAIN-SUFFIX,edu.cn
 
 # > Sony
 USER-AGENT,RemotePlay*
-DOMAIN-SUFFIX,playstation.com
-DOMAIN-SUFFIX,playstation.net
-DOMAIN-SUFFIX,playstationnetwork.com
-DOMAIN-SUFFIX,sony.com
-DOMAIN-SUFFIX,sonyentertainmentnetwork.com
 
 # > TeamViewer
 IP-CIDR,185.188.32.0/24,no-resolve
@@ -30,7 +27,6 @@ IP-CIDR6,2a0b:b581::/48,no-resolve
 IP-CIDR6,2a0b:b582::/48,no-resolve
 IP-CIDR6,2a0b:b583::/48,no-resolve
 
-# Domestic
 DOMAIN-SUFFIX,12306.cn
 DOMAIN-SUFFIX,12306.com
 DOMAIN-SUFFIX,126.net
@@ -65,6 +61,7 @@ DOMAIN-SUFFIX,autonavi.com
 DOMAIN-SUFFIX,aweme.snssdk.com
 DOMAIN-SUFFIX,bababian.com
 DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidupcs.com
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,bdimg.com
 DOMAIN-SUFFIX,bdstatic.com
@@ -93,6 +90,7 @@ DOMAIN-SUFFIX,didialift.com
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,douban.com
 DOMAIN-SUFFIX,doubanio.com
+DOMAIN-SUFFIX,douyin.com
 DOMAIN-SUFFIX,douyu.com
 DOMAIN-SUFFIX,douyu.tv
 DOMAIN-SUFFIX,douyutv.com
@@ -110,6 +108,7 @@ DOMAIN-SUFFIX,fir.im
 DOMAIN-SUFFIX,firefox.com
 DOMAIN-SUFFIX,frdic.com
 DOMAIN-SUFFIX,fresh-ideas.cc
+DOMAIN-SUFFIX,gameloft.com
 DOMAIN-SUFFIX,geetest.com
 DOMAIN-SUFFIX,godic.net
 DOMAIN-SUFFIX,goodread.com
@@ -127,11 +126,8 @@ DOMAIN-SUFFIX,icedropper.com
 DOMAIN-SUFFIX,iciba.com
 DOMAIN-SUFFIX,ifeng.com
 DOMAIN-SUFFIX,ifengimg.com
-DOMAIN-SUFFIX,images.unsplash.com
 DOMAIN-SUFFIX,images-amazon.com
 DOMAIN-SUFFIX,img4me.com
-DOMAIN-SUFFIX,ipify.org
-DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,ithome.com
 DOMAIN-SUFFIX,ixdzs.com
 DOMAIN-SUFFIX,jd.com
@@ -163,7 +159,6 @@ DOMAIN-SUFFIX,miwifi.com
 DOMAIN-SUFFIX,mob.com
 DOMAIN-SUFFIX,moji.com
 DOMAIN-SUFFIX,moke.com
-DOMAIN-SUFFIX,mtalk.google.com
 DOMAIN-SUFFIX,mxhichina.com
 DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,myunlu.com
@@ -175,8 +170,6 @@ DOMAIN-SUFFIX,nuomi.com
 DOMAIN-SUFFIX,ourbits.club
 DOMAIN-SUFFIX,ourdvs.com
 DOMAIN-SUFFIX,passthepopcorn.me
-DOMAIN-SUFFIX,paypal.com
-DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,pgyer.com
 DOMAIN-SUFFIX,pniao.com
 DOMAIN-SUFFIX,privatehd.to
@@ -230,7 +223,6 @@ DOMAIN-SUFFIX,tmzvps.com
 DOMAIN-SUFFIX,trello.com
 DOMAIN-SUFFIX,trellocdn.com
 DOMAIN-SUFFIX,totheglory.im
-DOMAIN-SUFFIX,tp.m-team.cc
 DOMAIN-SUFFIX,ttmeiju.com
 DOMAIN-SUFFIX,tudou.com
 DOMAIN-SUFFIX,udache.com
@@ -250,7 +242,6 @@ DOMAIN-SUFFIX,weiphone.net
 DOMAIN-SUFFIX,wenku8.net
 DOMAIN-SUFFIX,werewolf.53site.com
 DOMAIN-SUFFIX,wkcdn.com
-DOMAIN-SUFFIX,workflowy.com
 DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,xhostfire.com
 DOMAIN-SUFFIX,xiami.com
@@ -263,8 +254,6 @@ DOMAIN-SUFFIX,ximalaya.com
 DOMAIN-SUFFIX,xitek.com
 DOMAIN-SUFFIX,xmcdn.com
 DOMAIN-SUFFIX,xslb.net
-DOMAIN-SUFFIX,xteko.com
-DOMAIN-SUFFIX,xunlei.com
 DOMAIN-SUFFIX,yach.me
 DOMAIN-SUFFIX,yeepay.com
 DOMAIN-SUFFIX,yhd.com
@@ -282,3 +271,6 @@ DOMAIN-SUFFIX,zimuzu.tv
 DOMAIN-SUFFIX,zmz002.com
 
 IP-CIDR,1.255.62.0/24,no-resolve
+
+# > CN
+DOMAIN-SUFFIX,cn

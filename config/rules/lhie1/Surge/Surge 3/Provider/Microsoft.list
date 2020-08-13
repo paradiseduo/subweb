@@ -1,6 +1,8 @@
 # > Microsoft
 USER-AGENT,OneDrive*
 DOMAIN-KEYWORD,microsoft
+DOMAIN-KEYWORD,onedrive
+DOMAIN-SUFFIX,azure.cn
 DOMAIN-SUFFIX,azure.com
 DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,live.com
@@ -9,7 +11,7 @@ DOMAIN-SUFFIX,msn.com
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office.net
 DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,skype.com
-DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,windows.net
-DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,xboxlive.com

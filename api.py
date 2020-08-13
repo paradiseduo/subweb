@@ -68,32 +68,39 @@ def basic():
                         emoji = 'false'
                     fdn = request.form.get('fdn')
                     if fdn == None:
-                        fdn= 'false'                    
+                        fdn= 'false'     
+                    new_name = request.form.get('new_name')
+                    if new_name == None:
+                        new_name= 'false'                 
                 except :
                     return '出现BUG，请反馈'
                 if tool == 'clashr':
-                        CustomGroupvmess = '{ip}/sub?target=clashr&url={sub}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=clashr&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=clashr&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=clashr&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('clashr.html',sub = s,custom="未填写",api=CustomGroupvmess,api2=api2)    
+                if tool == 'trojan':
+                        CustomGroupvmess = '{ip}/sub?target=trojan&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=trojan&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
+                        return render_template('trojan.html',sub = s,custom="未填写",api=CustomGroupvmess,api2=api2)                   
                 if tool == 'loon':
-                        CustomGroupvmess = '{ip}/sub?target=loon&url={sub}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=loon&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=loon&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=loon&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('loon.html',sub = s,custom="未填写",api=CustomGroupvmess,api2=api2)                                           
                 if tool == 'surge':
-                        CustomGroupvmess = '{ip}/sub?target=surge&url={sub}&ver=4&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=surge&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=surge&url={sub}&ver=4&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=surge&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('surge.html',sub = s,custom="默认为surge4，参数为为ver=4。",api=CustomGroupvmess,api2=api2)
                 if tool == 'qx':
-                        CustomGroupvmess = '{ip}/sub?target=quanx&url={sub}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=quanx&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn)
+                        CustomGroupvmess = '{ip}/sub?target=quanx&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=quanx&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn)
                         return render_template('quanx.html',sub = s,custom="未填写",api=CustomGroupvmess,api2=api2)  
                 if tool == 'mellow':
-                        CustomGroupvmess = '{ip}/sub?target=mellow&url={sub}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=mellow&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=mellow&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=mellow&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('mellow.html',sub = s,custom="未填写",api=CustomGroupvmess,api2=api2)
                 if tool == 'surfboard':
-                        CustomGroupvmess = '{ip}/sub?target=surfboard&url={sub}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=surfboard&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=surfboard&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=surfboard&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('surfboard.html',sub = s,custom="未填写",api=CustomGroupvmess,api2=api2)                                
                 else:
                     return render_template('basic.html')    
@@ -142,31 +149,39 @@ def customgroup():
                     fdn = request.form.get('fdn')
                     if fdn == None:
                         fdn= 'false'
+                    new_name = request.form.get('new_name')
+                    if new_name == None:
+                        new_name= 'false'   
+
                 except :
                     return '出现BUG，请反馈'             
                 if tool == 'clashr':
-                        CustomGroupvmess = '{ip}/sub?target=clashr&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=clashr&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
-                        return render_template('clashr.html',sub = s,custom=n+c+method+'  备用暂时不支持',api=CustomGroupvmess,api2=api2)                       
+                        CustomGroupvmess = '{ip}/sub?target=clashr&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=clashr&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
+                        return render_template('clashr.html',sub = s,custom=n+c+method+'  备用暂时不支持',api=CustomGroupvmess,api2=api2)   
+                if tool == 'trojan':
+                        CustomGroupvmess = '{ip}/sub?target=trojan&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=trojan&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
+                        return render_template('trojan.html',sub = s,custom=n+c+method+'  备用暂时不支持',api=CustomGroupvmess,api2=api2)                       
                 if tool == 'surge':
-                        CustomGroupvmess = '{ip}/sub?target=surge&url={sub}&groups={groups}&ver=4&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=surge&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=surge&url={sub}&groups={groups}&ver=4&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=surge&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('surge.html',sub = s,custom=n+c+method+'\n备用暂时不支持\n'+'默认为surge4，参数为为ver=4。',api=CustomGroupvmess,api2=api2)
                 if tool == 'quanx':
-                        CustomGroupvmess = '{ip}/sub?target=quanx&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=quanx&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=quanx&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=quanx&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('quanx.html',sub = s,custom=n+c+method+'  备用暂时不支持',api=CustomGroupvmess,api2=api2)  
                 if tool == 'loon':
-                        CustomGroupvmess = '{ip}/sub?target=loon&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=loon&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=loon&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=loon&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('loon.html',sub = s,custom=n+c+method+'  备用暂时不支持',api=CustomGroupvmess,api2=api2)  
                 if tool == 'mellow':
-                        CustomGroupvmess = '{ip}/sub?target=mellow&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=mellow&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=mellow&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=mellow&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('mellow.html',sub = s,custom=n+c+method+'  备用暂时不支持',api=CustomGroupvmess,api2=api2)
                 if tool == 'surfboard':
-                        CustomGroupvmess = '{ip}/sub?target=surfboard&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=surfboard&url={sub}&emoji={emoji}&fdn={fdn}'.format(sub=str(sub),emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=surfboard&url={sub}&groups={groups}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=surfboard&url={sub}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(sub=str(sub),emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('surfboard.html',sub = s,custom=n+c+method+'  备用暂时不支持',api=CustomGroupvmess,api2=api2)                                          
                 else:
                     return render_template('index.html')    
@@ -200,6 +215,9 @@ def inigroup():
                     fdn = request.form.get('fdn')
                     if fdn == None:
                         fdn= 'false'
+                    new_name = request.form.get('new_name')
+                    if new_name == None:
+                        new_name= 'false'   
                 except :
                     return '出现BUG，请反馈'
                 try:
@@ -216,19 +234,19 @@ def inigroup():
                     return '检查远程配置文件是否正确'    
                 if tool == 'surge':
                     if iniflag == 'file':
-                        CustomGroupvmess = '{ip}/sub?target=surge&url={sub}&ruleset={rulesets}&groups={groups}&ver=4&emoji={emoji}&fdn={fdn}&include={custom}&exclude={custom2}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,rulesets=rulesets,emoji=emoji,fdn=fdn,custom2=encodeexcustom,custom=encodecustom)
-                        api2 = 'https://gfwsb.114514.best/sub?target=surge&url={sub}&ruleset={rulesets}&groups={groups}&ver=4&emoji={emoji}&fdn={fdn}&include={custom}&exclude={custom2}'.format(sub=str(sub),groups=groups,rulesets=rulesets,emoji=emoji,fdn=fdn,custom2=encodeexcustom,custom=encodecustom) 
+                        CustomGroupvmess = '{ip}/sub?target=surge&url={sub}&ruleset={rulesets}&groups={groups}&ver=4&emoji={emoji}&fdn={fdn}&new_name={new_name}&include={custom}&exclude={custom2}'.format(ip=api.aff.subip,sub=str(sub),groups=groups,rulesets=rulesets,emoji=emoji,new_name=new_name,fdn=fdn,custom2=encodeexcustom,custom=encodecustom)
+                        api2 = 'https://gfwsb.114514.best/sub?target=surge&url={sub}&ruleset={rulesets}&groups={groups}&ver=4&emoji={emoji}&fdn={fdn}&new_name={new_name}&include={custom}&exclude={custom2}'.format(sub=str(sub),groups=groups,rulesets=rulesets,emoji=emoji,new_name=new_name,fdn=fdn,custom2=encodeexcustom,custom=encodecustom) 
                         return render_template('surge.html',sub = s,custom=ini+'\n默认为surge4，参数为为ver=4。',api=CustomGroupvmess,api2=api2)
                     if iniflag == 'url':
-                        CustomGroupvmess = '{ip}/sub?target={tar}&url={sub}&config={config}&ver=4&emoji={emoji}&fdn={fdn}&include={custom}&exclude={custom2}'.format(tar=tool,ip=api.aff.subip,sub=str(sub),config=ini,emoji=emoji,fdn=fdn,custom2=encodeexcustom,custom=encodecustom)
-                        api2 = 'https://gfwsb.114514.best/sub?target={tar}&url={sub}&config={config}&ver=4&emoji={emoji}&fdn={fdn}&include={custom}&exclude={custom2}'.format(tar=tool,sub=str(sub),config=ini,emoji=emoji,fdn=fdn,custom2=encodeexcustom,custom=encodecustom) 
+                        CustomGroupvmess = '{ip}/sub?target={tar}&url={sub}&config={config}&ver=4&emoji={emoji}&fdn={fdn}&new_name={new_name}&include={custom}&exclude={custom2}'.format(tar=tool,ip=api.aff.subip,sub=str(sub),config=ini,emoji=emoji,new_name=new_name,fdn=fdn,custom2=encodeexcustom,custom=encodecustom)
+                        api2 = 'https://gfwsb.114514.best/sub?target={tar}&url={sub}&config={config}&ver=4&emoji={emoji}&fdn={fdn}&new_name={new_name}&include={custom}&exclude={custom2}'.format(tar=tool,sub=str(sub),config=ini,emoji=emoji,new_name=new_name,fdn=fdn,custom2=encodeexcustom,custom=encodecustom) 
                         return render_template('surge.html',sub = s,custom=ini+'\n'+'默认为surge4，参数为为ver=4。',api=CustomGroupvmess,api2=api2)                        
                 if iniflag == 'file':
-                    CustomGroupvmess = '{ip}/sub?target={tar}&url={sub}&ruleset={rulesets}&groups={groups}&emoji={emoji}&fdn={fdn}&include={custom}&exclude={custom2}'.format(tar=tool,ip=api.aff.subip,sub=str(sub),groups=groups,rulesets=rulesets,emoji=emoji,fdn=fdn,custom2=encodeexcustom,custom=encodecustom)
-                    api2 = 'https://gfwsb.114514.best/sub?target={tar}&url={sub}&ruleset={rulesets}&groups={groups}&emoji={emoji}&fdn={fdn}&include={custom}&exclude={custom2}'.format(tar=tool,sub=str(sub),groups=groups,rulesets=rulesets,emoji=emoji,fdn=fdn,custom2=encodeexcustom,custom=encodecustom) 
+                    CustomGroupvmess = '{ip}/sub?target={tar}&url={sub}&ruleset={rulesets}&groups={groups}&emoji={emoji}&fdn={fdn}&new_name={new_name}&include={custom}&exclude={custom2}'.format(tar=tool,ip=api.aff.subip,sub=str(sub),groups=groups,rulesets=rulesets,emoji=emoji,new_name=new_name,fdn=fdn,custom2=encodeexcustom,custom=encodecustom)
+                    api2 = 'https://gfwsb.114514.best/sub?target={tar}&url={sub}&ruleset={rulesets}&groups={groups}&emoji={emoji}&fdn={fdn}&new_name={new_name}&include={custom}&exclude={custom2}'.format(tar=tool,sub=str(sub),groups=groups,rulesets=rulesets,emoji=emoji,new_name=new_name,fdn=fdn,custom2=encodeexcustom,custom=encodecustom) 
                 if iniflag == 'url':
-                    CustomGroupvmess = '{ip}/sub?target={tar}&url={sub}&config={config}&emoji={emoji}&fdn={fdn}&include={custom}&exclude={custom2}'.format(tar=tool,ip=api.aff.subip,sub=str(sub),config=ini,emoji=emoji,fdn=fdn,custom2=encodeexcustom,custom=encodecustom)
-                    api2 = 'https://gfwsb.114514.best/sub?target={tar}&url={sub}&config={config}&emoji={emoji}&fdn={fdn}&include={custom}&exclude={custom2}'.format(tar=tool,sub=str(sub),config=ini,emoji=emoji,fdn=fdn,custom2=encodeexcustom,custom=encodecustom) 
+                    CustomGroupvmess = '{ip}/sub?target={tar}&url={sub}&config={config}&emoji={emoji}&fdn={fdn}&new_name={new_name}&include={custom}&exclude={custom2}'.format(tar=tool,ip=api.aff.subip,sub=str(sub),config=ini,emoji=emoji,new_name=new_name,fdn=fdn,custom2=encodeexcustom,custom=encodecustom)
+                    api2 = 'https://gfwsb.114514.best/sub?target={tar}&url={sub}&config={config}&emoji={emoji}&fdn={fdn}&new_name={new_name}&include={custom}&exclude={custom2}'.format(tar=tool,sub=str(sub),config=ini,emoji=emoji,new_name=new_name,fdn=fdn,custom2=encodeexcustom,custom=encodecustom) 
                 return render_template('{tool}.html'.format(tool=tool),sub = s,custom=ini,api=CustomGroupvmess,api2=api2)
             else:
                 return '订阅不规范'
@@ -263,40 +281,40 @@ def lists():
                     return '出现BUG，请反馈'
                 yourcustom = '包含的节点:'+custom+'           去掉的节点:'+excustom  
                 if tool == 'clashnode':
-                        CustomGroupvmess = '{ip}/sub?target=clashr&list=true&url={sub}&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=clashr&list=true&url={sub}&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn) 
+                        CustomGroupvmess = '{ip}/sub?target=clashr&list=true&url={sub}&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=clashr&list=true&url={sub}&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn) 
                         return render_template('clashr.html',sub = s,custom=yourcustom,api=CustomGroupvmess,api2=api2)                                            
                 if tool == 'qxnode':
-                        CustomGroupvmess = '{ip}/sub?target=quanx&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=quanx&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
+                        CustomGroupvmess = '{ip}/sub?target=quanx&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=quanx&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
                         return render_template('qxnode.html',sub = s,custom=yourcustom,api=CustomGroupvmess,api2=api2)                       
                 if tool == 'surnode':
-                        CustomGroupvmess = '{ip}/sub?target=surge&url={sub}&ver=4&list=true&udp=true&tfo=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=surge&url={sub}&ver=4&list=true&udp=true&tfo=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
+                        CustomGroupvmess = '{ip}/sub?target=surge&url={sub}&ver=4&list=true&udp=true&tfo=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=surge&url={sub}&ver=4&list=true&udp=true&tfo=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
                         return render_template('surgenode.html',sub = s,custom=yourcustom,api=CustomGroupvmess,api2=api2)                                 
                 if tool == 'ssrnode':
-                        CustomGroupvmess = '{ip}/sub?target=ssr&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=ssr&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
+                        CustomGroupvmess = '{ip}/sub?target=ssr&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=ssr&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
                         return render_template('othernode.html',sub = s,custom=yourcustom,api=CustomGroupvmess,api2=api2)  
                 if tool == 'quannode':
-                        CustomGroupvmess = '{ip}/sub?target=quan&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=quan&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
+                        CustomGroupvmess = '{ip}/sub?target=quan&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=quan&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
                         return render_template('othernode.html',sub = s,custom=yourcustom,api=CustomGroupvmess,api2=api2)   
                 if tool == 'ssdnode':
-                        CustomGroupvmess = '{ip}/sub?target=ssd&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=ssd&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
+                        CustomGroupvmess = '{ip}/sub?target=ssd&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=ssd&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
                         return render_template('othernode.html',sub = s,custom=yourcustom,api=CustomGroupvmess,api2=api2)  
                 if tool == 'ssnode':
-                        CustomGroupvmess = '{ip}/sub?target=ss&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=ss&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
+                        CustomGroupvmess = '{ip}/sub?target=ss&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=ss&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
                         return render_template('othernode.html',sub = s,custom=yourcustom,api=CustomGroupvmess,api2=api2)  
                 if tool == 'sssubnode':
-                        CustomGroupvmess = '{ip}/sub?target=sssub&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=sssub&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
+                        CustomGroupvmess = '{ip}/sub?target=sssub&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=sssub&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
                         return render_template('othernode.html',sub = s,custom=yourcustom,api=CustomGroupvmess,api2=api2)  
                 if tool == 'v2raynode':
-                        CustomGroupvmess = '{ip}/sub?target=v2ray&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
-                        api2 = 'https://gfwsb.114514.best/sub?target=v2ray&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,fdn=fdn)
+                        CustomGroupvmess = '{ip}/sub?target=v2ray&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,ip=api.aff.subip,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
+                        api2 = 'https://gfwsb.114514.best/sub?target=v2ray&url={sub}&list=true&include={custom}&exclude={custom2}&emoji={emoji}&fdn={fdn}&new_name={new_name}'.format(custom2=encodeexcustom,sub=str(sub),custom=encodecustom,emoji=emoji,new_name=new_name,fdn=fdn)
                         return render_template('othernode.html',sub = s,custom=yourcustom,api=CustomGroupvmess,api2=api2)                  
                 else:
                     return render_template('basic.html')    

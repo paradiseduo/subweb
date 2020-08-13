@@ -151,14 +151,18 @@ DOMAIN-SUFFIX,steamstat.us
 # > Tencent
 USER-AGENT,MicroMessenger%20Client
 USER-AGENT,WeChat*
+USER-AGENT,%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1*
 DOMAIN-SUFFIX,gtimg.com
 DOMAIN-SUFFIX,idqqimg.com
 DOMAIN-SUFFIX,igamecj.com
 DOMAIN-SUFFIX,myapp.com
 DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-SUFFIX,tencent.com
 DOMAIN-SUFFIX,tencent-cloud.net
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN,file-igamecj.akamaized.net
 # > YYeTs
 USER-AGENT,YYeTs*
 DOMAIN-SUFFIX,jstucdn.com
@@ -195,11 +199,14 @@ DOMAIN-SUFFIX,classix-unlimited.co.uk
 DOMAIN-SUFFIX,empornium.me
 DOMAIN-SUFFIX,gazellegames.net
 DOMAIN-SUFFIX,hdchina.org
+DOMAIN-SUFFIX,hdhome.org
 DOMAIN-SUFFIX,hdsky.me
+DOMAIN-SUFFIX,hdbits.org
 DOMAIN-SUFFIX,icetorrent.org
 DOMAIN-SUFFIX,jpopsuki.eu
 DOMAIN-SUFFIX,keepfrds.com
 DOMAIN-SUFFIX,madsrevolution.net
+DOMAIN-SUFFIX,morethan.tv
 DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,nanyangpt.com
 DOMAIN-SUFFIX,ncore.cc
@@ -207,6 +214,7 @@ DOMAIN-SUFFIX,open.cd
 DOMAIN-SUFFIX,ourbits.club
 DOMAIN-SUFFIX,passthepopcorn.me
 DOMAIN-SUFFIX,privatehd.to
+DOMAIN-SUFFIX,pterclub.com
 DOMAIN-SUFFIX,redacted.ch
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,tjupt.org
@@ -381,6 +389,7 @@ DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,zhuihd.com
 DOMAIN,download.jetbrains.com
 DOMAIN,images-cn.ssl-images-amazon.com
+DOMAIN,cdn.angruo.com
 
 # DNSPod Public DNS+
 IP-CIDR,119.28.28.28/32,no-resolve

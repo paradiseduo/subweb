@@ -1,3 +1,5 @@
+# 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
+
 # 广告关键词
 DOMAIN-KEYWORD,admarvel
 DOMAIN-KEYWORD,admaster
@@ -28,7 +30,6 @@ DOMAIN-KEYWORD,pingfore
 DOMAIN-KEYWORD,socdm
 DOMAIN-KEYWORD,supersonicads
 DOMAIN-KEYWORD,tracking
-DOMAIN-KEYWORD,traffic
 DOMAIN-KEYWORD,uedas
 DOMAIN-KEYWORD,usage
 DOMAIN-KEYWORD,wlmonitor
@@ -133,7 +134,6 @@ DOMAIN-SUFFIX,adzerk.net
 DOMAIN-SUFFIX,agrant.cn
 DOMAIN-SUFFIX,agrantsem.com
 DOMAIN-SUFFIX,aihaoduo.cn
-DOMAIN-SUFFIX,airpush.com
 DOMAIN-SUFFIX,ajapk.com
 DOMAIN-SUFFIX,allyes.cn
 DOMAIN-SUFFIX,allyes.com
@@ -277,7 +277,6 @@ DOMAIN-SUFFIX,keydot.net
 DOMAIN-SUFFIX,keyrun.cn
 DOMAIN-SUFFIX,kmd365.com
 DOMAIN-SUFFIX,krux.net
-DOMAIN-SUFFIX,leadboltads.net
 DOMAIN-SUFFIX,lnk0.com
 DOMAIN-SUFFIX,lnk8.cn
 DOMAIN-SUFFIX,localytics.com
@@ -491,7 +490,6 @@ DOMAIN-SUFFIX,adtechus.com
 DOMAIN-SUFFIX,airpush.com
 DOMAIN-SUFFIX,am15.net
 DOMAIN-SUFFIX,amobee.com
-DOMAIN-SUFFIX,appadhoc.com
 DOMAIN-SUFFIX,appier.net
 DOMAIN-SUFFIX,applift.com
 DOMAIN-SUFFIX,apsalar.com
@@ -527,7 +525,6 @@ DOMAIN-SUFFIX,fastclick.net
 DOMAIN-SUFFIX,flurry.com
 DOMAIN-SUFFIX,gosquared.com
 DOMAIN-SUFFIX,gtags.net
-DOMAIN-SUFFIX,guomob.com
 DOMAIN-SUFFIX,heyzap.com
 DOMAIN-SUFFIX,histats.com
 DOMAIN-SUFFIX,hitslink.com
@@ -595,6 +592,7 @@ DOMAIN-SUFFIX,statcounter.com
 DOMAIN-SUFFIX,steelhousemedia.com
 DOMAIN-SUFFIX,stickyadstv.com
 DOMAIN-SUFFIX,supersonic.com
+DOMAIN-SUFFIX,taboola.com
 DOMAIN-SUFFIX,tapjoy.com
 DOMAIN-SUFFIX,tapjoyads.com
 DOMAIN-SUFFIX,trafficjunky.com
